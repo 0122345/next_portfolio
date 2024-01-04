@@ -22,9 +22,9 @@ const index = () => {
                 ,I am Ntwari Ashimwe Fiacre
             </span>
          </div>
-         <div className="flex flex-row justify-center items-center mt-32 rounded-l-xl  w-40 h-8 border border-solid border-often text-white hover:bg-often hover:transition-colors cursor-pointer">
-             <span className="flex j">More about Me</span>
-             <span className="flex justify-center items-center w-8 h-8 border border-solid border-often float-right right-0 rounded-full bg-often"><FaArrowRight/></span>
+         <div className="flex flex-row justify-center items-center mt-32 rounded-l-lg rounded-r-full  w-64 h-12 border border-solid border-often text-white hover:bg-often hover:transition-colors cursor-pointer ">
+             <span className="flex text-2xl font-bold">More about Me</span>
+             <span className="flex justify-center ml-8 items-center w-12 h-12 border border-solid border-often float-right rounded-full bg-often"><FaArrowRight/></span>
          </div>
 
          <div className="flex flex-1 flex-row justify-end items-end pr-8">
