@@ -31,11 +31,22 @@ const SideBar = () => {
          
       </div>
     <div className="top-24">
-        <span className=" text-often text-2xl m-4 hover:cursor-pointer"><FaHome /></span>
-        <span className="text-often text-2xl m-4 hover:cursor-pointer"><IoMdPerson /></span>
-        <span className="text-often text-2xl m-4 hover:cursor-pointer"><FaBriefcase /></span>
-        <span className="text-often text-2xl m-4 hover:cursor-pointer"><IoIosJournal /></span>
-        <span className="text-often text-2xl m-4 hover:cursor-pointer"><FaPhone /></span>
+        <Link href="">
+        <span className=" flex justify-center items-center border border-solid border-gray-500 rounded-full bg-black w-[42px] h-[42px] text-white focus:text-often hover:text-often active:text-often text-2xl m-4 hover:cursor-pointer"><FaHome /></span>
+        </Link>
+        <Link href="about">
+        <span className="flex justify-center items-center border border-solid border-gray-500 rounded-full bg-black w-[42px] h-[42px] text-white focus:text-often text-2xl m-4 hover:text-often active:text-often hover:cursor-pointer"><IoMdPerson /></span>
+        </Link>
+        <Link href="/contact">
+        <span className="flex justify-center items-center border border-solid border-gray-500 rounded-full bg-black w-[42px] h-[42px] text-white focus:text-often text-2xl m-4 hover:text-often active:text-often hover:cursor-pointer"><FaBriefcase /></span>
+        </Link>
+        <Link href="">
+        <span className="flex justify-center items-center border border-solid border-gray-500 rounded-full bg-black w-[42px] h-[42px] text-white focus:text-often text-2xl m-4 hover:text-often active:text-often hover:cursor-pointer"><IoIosJournal /></span>
+        </Link>
+        <Link href="">
+        <span className="flex justify-center items-center border border-solid border-gray-500 rounded-full bg-black w-[42px] h-[42px] text-white focus:text-often text-2xl m-4 hover:text-often active:text-often hover:cursor-pointer"><FaPhone /></span>
+        </Link>
+         
     </div>
     </main>
   )
