@@ -1,5 +1,7 @@
 import Layout from '@/components/layout'
 import Image from 'next/image';
+import Link from 'next/link';
+import SendButton from '@/utils/SendButton';
 import { FaArrowRight,FaDribbble,FaFacebook, FaFigma, FaInstagram, FaWhatsapp  } from "react-icons/fa";
  
 
@@ -12,23 +14,31 @@ const index = () => {
   return (
     <Layout>
         <main className="h-screen w-screen bg-home overflow-hidden">
-         <div className="flex flex-row  justify-between text-xl text-white p-5 m-5">
-            <span className="flex uppercase text-4xl font-extrabold">n</span>
-            <span className="hidden md:flex lg:flex xl:flex 2xl:flex">Ntwari Ashimwe Fiacre/(+250) 790 100 86</span>
+         <div className="flex flex-row  justify-between text-xl text-white p-4 m-5">
+            <span className="flex uppercase text-5xl font-extrabold text-blue-700">n</span>
+            <span className="hidden md:flex lg:flex xl:flex 2xl:flex justify-center items-center right-[45%] relative">Ntwari Ashimwe Fiacre/(+250) 790 100 86</span>
          </div>
          
-         <div className="flex flex-row text-lg w-60 h-9">
-            <span className="text-often font-extrabold text-2xl pl-4">Hi there</span>
-            <span className="text-white text-xl p-1">
+         <div className="flex flex-row text-lg w-64 h-9 ml-16 mt-20 ">
+            <span className="text-often font-extrabold text-3xl pl-4">Hi there</span>
+            <span className="text-white text-2xl font-bold p-1">
                 ,I am Ntwari Ashimwe Fiacre
             </span>
          </div>
-         <div className="flex flex-row justify-center items-center mt-32 rounded-l-lg rounded-r-full  w-64 h-12 border border-solid border-often text-white hover:bg-often hover:transition-colors cursor-pointer ">
-             <span className="flex text-2xl font-bold">More about Me</span>
-             <span className="flex justify-center ml-8 items-center w-12 h-12 border border-solid border-often float-right rounded-full bg-often"><FaArrowRight/></span>
+         {/* <div className="flex ml-12 mt-48 rounded-l-lg rounded-r-full  w-72 h-12 border border-solid border-often text-white hover:bg-often hover:transition-colors cursor-pointer space-x-4 space-y-0">
+            <Link href="/about">
+            <span className="flex text-2xl font-bold">More about Me</span>
+             <span className="flex justify-center items-center ml-8 w-12 h-12 border border-solid border-often float-right rounded-full bg-often"><FaArrowRight/></span>
+            </Link>    
+         </div> */}
+
+         <div className="">
+            <Link href=''>
+               <SendButton />
+            </Link>
          </div>
 
-         <div className="flex flex-1 flex-row justify-end items-end">
+         <div className="flex flex-row lg:justify-end items-end justify-evenly lg:top-[30%] lg:relative top-56 absolute z-0">
             <Image 
              src='/rengukokyojuro.png'
              alt='renguko kyojuro'
@@ -37,12 +47,12 @@ const index = () => {
 
             />
          </div>
-         <div className="text-white flex flex-row justify-around w-56 ml-5 p-3">
-             <span className="flex justify-center items-center hover:cursor-pointer border border-solid border-gray-500 rounded-full bg-gray-500 shadow shadow-slate-400 hover:shadow-md w-[32px] h-[32px]"><FaFacebook /></span>
-             <span className="flex justify-center items-center hover:cursor-pointer border border-solid border-gray-500 rounded-full bg-gray-500 shadow shadow-slate-400 hover:shadow-md w-[32px] h-[32px]"><FaInstagram /></span>
-             <span className="flex justify-center items-center hover:cursor-pointer border border-solid border-gray-500 rounded-full bg-gray-500 shadow shadow-slate-400 hover:shadow-md w-[32px] h-[32px]"><FaFigma /></span>
-             <span className="flex justify-center items-center hover:cursor-pointer border border-solid border-gray-500 rounded-full bg-gray-500 shadow shadow-slate-400 hover:shadow-md w-[32px] h-[32px]"><FaDribbble /></span>
-             <span className="flex justify-center items-center hover:cursor-pointer border border-solid border-gray-500 rounded-full bg-gray-500 shadow shadow-slate-400 hover:shadow-md w-[32px] h-[32px]"><FaWhatsapp /></span>
+         <div className="text-white z-10 flex flex-row justify-around  w-72  bottom-10 left-8 space-x-4  absolute">
+             <span className="links"><FaFacebook /></span>
+             <span className="links"><FaInstagram /></span>
+             <span className="links"><FaFigma /></span>
+             <span className="links"><FaDribbble /></span>
+             <span className="links"><FaWhatsapp /></span>
          </div>
     </main>
     </Layout>

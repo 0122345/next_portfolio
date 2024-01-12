@@ -1,8 +1,17 @@
-import React from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
+
 
 const Work = () => {
   return (
-    <div>Work</div>
+    <main className="">
+      <div className="">
+        
+      </div>
+      <div className=""id='cards'>
+
+      </div>
+    </main>
   )
 }
 

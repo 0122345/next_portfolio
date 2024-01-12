@@ -2,4 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
- 
+@layer components {
+    .links {
+        @apply flex justify-center items-center text-xl hover:cursor-pointer border border-solid border-gray-500 rounded-full bg-gray-500 shadow shadow-slate-400 hover:shadow-md w-[42px] h-[42px]
+    }
+}
