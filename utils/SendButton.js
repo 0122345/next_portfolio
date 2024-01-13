@@ -1,31 +1,12 @@
-// import '../public/send.css'
+import styles from './send.module.css';
+import {FaSend} from "react-icons/fa6"
 
 const SendButton = () => {
-//    const button =  {
-//     fontFamily: 'inherit',
-//     fontSize:'20px',
-//     background: 'royalblue',
-//     color:'white',
-//     padding: '0.7em 1em',
-//     paddingLeft: '0.9em',
-//     display: 'flex',
-//     alignItems: 'center',
-//     border: 'none',
-//     borderRadius: '16px',
-//     overflow: 'hidden',
-//     transition: 'all 0.2s',
-//     cursor:' pointer'
-//   }
-
-
-
-
-
-
-
+ 
   return (
-    <div className='flex ml-12 mt-48 rounded-l-lg rounded-r-full  w-72 h-12 border border-solid border-often text-white hover:bg-often hover:transition-colors cursor-pointer space-x-4 space-y-0'>
-        <button>
+    // <div className='flex ml-12 mt-48 rounded-l-lg rounded-r-full  w-72 h-12 border border-solid border-often text-white hover:bg-often hover:transition-colors cursor-pointer space-x-4 space-y-0'>
+     <div className={styles.send}>
+     <button className={styles.button}>
     <div className="svg-wrapper-1">
     <div className="svg-wrapper">
       <svg
@@ -44,8 +25,9 @@ const SendButton = () => {
   </div>
   <span className='flex text-2xl font-bold'>More about Me</span>
 </button>
+     </div>
 
-    </div>
+    // </div>
   )
 }
 

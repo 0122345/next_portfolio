@@ -1,28 +1,33 @@
- 
+ import styles from './list.module.css';
+//  import './list-darkmode.css'
 
-const list = () => {
+const List = () => {
   return (
-    <div className="">
-        <form className="form">
-
-	    <label class="label">
-        <input checked="" value="home" name="band" type="radio" class="input" />
-        <span class="span">Home</span></label>
-	     <label class="label">
-        <input value="fm" name="band" type="radio" class="input"/><span class="span">
-        ABout Me</span></label>
-	    <label class="label">
-        <input value="sw" name="band" type="radio" class="input"/><span class="span">
-        Work</span></label>
-	    <label class="label">
-        <input value="mw" name="band" type="radio" class="input"/><span class="span">
-        Blog</span></label>
-	     <label class="label">
-        <input value="mw" name="band" type="radio" class="input"/><span class="span">
-        Contact Me</span></label>
-       </form>
+    <div className={styles.list}>
+      <form className={styles.form}>
+        <label className={styles.label}>
+          <input checked="" value="home" name="band" type="radio" className={styles.input} />
+          <span className={styles.span}>Home</span>
+        </label>
+        <label className={styles.label}>
+          <input value="fm" name="band" type="radio" className={styles.input} />
+          <span className={styles.span}>About Me</span>
+        </label>
+        <label className={styles.label}>
+          <input value="sw" name="band" type="radio" className={styles.input} />
+          <span className={styles.span}>Work</span>
+        </label>
+        <label className={styles.label}>
+          <input value="mw" name="band" type="radio" className={styles.input} />
+          <span className={styles.span}>Blog</span>
+        </label>
+        <label className={styles.label}>
+          <input value="mw" name="band" type="radio" className={styles.input} />
+          <span className={styles.span}>Contact Me</span>
+        </label>
+      </form>
     </div>
   );
 }
 
-export default list
+export default List;

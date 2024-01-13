@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Carrois+Gothic&family=Poppins:wght@100;600&display=swap');
+.name{
+    position: relative;
+    font-family: 'Bebas Neue',sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+     text-shadow: 2px 2px 4px #3f3f3f;
+
+     display: none;
+    }
+@keyframes animate {
+from {color: #0e3742;}
+ to {color: lightblue;}
+}
+
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    .name{
+        display: block;
+    }
+    
+}
+
+/*className="hidden md:flex lg:flex xl:flex 2xl:flex justify-center items-center right-[45%] relative font-bold" */

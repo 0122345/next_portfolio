@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SendButton from '@/utils/SendButton';
 import { FaArrowRight,FaDribbble,FaFacebook, FaFigma, FaInstagram, FaWhatsapp  } from "react-icons/fa";
+import styles from './name.module.css'
  
 
 
@@ -16,7 +17,8 @@ const index = () => {
         <main className="h-screen w-screen bg-home overflow-hidden">
          <div className="flex flex-row  justify-between text-xl text-white p-4 m-5">
             <span className="flex uppercase text-5xl font-extrabold text-blue-700">n</span>
-            <span className="hidden md:flex lg:flex xl:flex 2xl:flex justify-center items-center right-[45%] relative">Ntwari Ashimwe Fiacre/(+250) 790 100 86</span>
+            <span className={styles.name} >Ntwari Ashimwe Fiacre/(+250) 790 100 861</span>
+            
          </div>
          
          <div className="flex flex-row text-lg w-64 h-9 ml-16 mt-20 ">

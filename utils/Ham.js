@@ -1,8 +1,8 @@
- 
+ import styles from './ham.module.css';
 
 const Ham = () => {
   return (
-     <div className="">
+     <div className="" style={styles.Ham}>
          <input type="checkbox" id="checkbox"/>
          <label for="checkbox" class="toggle">
         <div class="bars" id="bar1"></div>

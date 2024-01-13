@@ -5,6 +5,8 @@ import { IoMdPerson,IoIosJournal } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
 import DarkMode from "@/utils/DarkMode";
 import Hamburder from "@/utils/Hamburder";
+ 
+ 
 
 
 
@@ -21,9 +23,9 @@ const SideBar = () => {
 
   return (
     <main className="flex flex-col right-11 top-16 fixed ">
-      {/* <div className="">
-      <Hamburder className='mr-[4pc] right-16' />
-      </div> */}
+      <div className="">
+      {/* <Hamburder className='mr-[4pc] right-16' /> */}
+      </div>
       <div className="flex text-often w-10 h-8 top-[-4px] mr-[2pc] space-x-4 relative flex-row ">
         
         <DarkMode />
