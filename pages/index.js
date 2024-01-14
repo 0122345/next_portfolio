@@ -1,64 +1,51 @@
-import Layout from '@/components/layout'
-import Image from 'next/image';
-import Link from 'next/link';
-import SendButton from '@/utils/SendButton';
-import { FaArrowRight,FaDribbble,FaFacebook, FaFigma, FaInstagram, FaWhatsapp  } from "react-icons/fa";
-import styles from './name.module.css'
+import Layout from '@/components/layout';
  
+ const About = () => {
+   return (
+     <Layout>
+        <main className="bg-home w-screen h-screen">
+          <div className="justify-center items-center text-center lg:w-full md:w-full w-[314px]">
+            <p className="flex justify-center items-center">
+              <span className="lg:text-9xl md:text-7xl xl:text-9xl text-5xl text-gray-800 to-transparent font-extrabold z-0 relative">resume</span>
+              <span className="uppercase font-bold lg:text-5xl md:text-5xl text-3xl text-white z-10 relative right-[30%] top-[20%]">about</span>
+              <span className="uppercase font-bold lg:text-5xl md:text-5xl text-3xl text-often z-10 relative right-[29%] top-[20%]">me</span>
+            </p>
+          </div>
+           
+           <p className="text-white font-bold text-xl m-[23px] top-10 relative">Personal Information</p>
 
+           <div className="flex md:flex-row lg:flex-row space-y-4 flex-col pt-10 text-white space-x-5 ml-8">
+            <div className="w-[315px] flex flex-col h-52 text-lg space-y-6">
+               <span className="">First name: Fiacre</span>
+               <span className="">Last name: Ntwari Ashimwe</span>
+               <span className="">Age: 23 Years</span>
+               <span className="">Nationality: Rwandan</span>
+            </div>
 
+            <div className="w-[375px] flex flex-col left-0 text-lg space-y-6">
+               <span className="">Address: Kigali,Rwanda</span>
+               <span className="">Phone: +250 790 100 861</span>
+               <span className="">Email: ntwarifiacre043@gmail.com</span>
+               <span className="">Language: Kinyarwanda, English, Japanese</span>
+            </div>
 
+            <div className="">
+              <span className="">
 
+              </span>
+              <span className="">
+
+              </span>
+              <span className="">
+               
+              </span>
+            </div>
+
+           </div>
+
+        </main>
+     </Layout>
+   )
+ }
  
-
-const index = () => {
-  return (
-    <Layout>
-        <main className="h-screen w-screen bg-home overflow-hidden">
-         <div className="flex flex-row  justify-between text-xl text-white p-4 m-5">
-            <span className="flex uppercase text-5xl font-extrabold text-blue-700">n</span>
-            <span className={styles.name} >Ntwari Ashimwe Fiacre/(+250) 790 100 861</span>
-            
-         </div>
-         
-         <div className="flex flex-row text-lg w-64 h-9 ml-16 mt-20 ">
-            <span className="text-often font-extrabold text-3xl pl-4">Hi there</span>
-            <span className="text-white text-2xl font-bold p-1">
-                ,I am Ntwari Ashimwe Fiacre
-            </span>
-         </div>
-         {/* <div className="flex ml-12 mt-48 rounded-l-lg rounded-r-full  w-72 h-12 border border-solid border-often text-white hover:bg-often hover:transition-colors cursor-pointer space-x-4 space-y-0">
-            <Link href="/about">
-            <span className="flex text-2xl font-bold">More about Me</span>
-             <span className="flex justify-center items-center ml-8 w-12 h-12 border border-solid border-often float-right rounded-full bg-often"><FaArrowRight/></span>
-            </Link>    
-         </div> */}
-
-         <div className="">
-            <Link href=''>
-               <SendButton />
-            </Link>
-         </div>
-
-         <div className="flex flex-row lg:justify-end items-end justify-evenly lg:top-[30%] lg:relative top-56 absolute z-0">
-            <Image 
-             src='/rengukokyojuro.png'
-             alt='renguko kyojuro'
-             width={400}
-             height={400}
-
-            />
-         </div>
-         <div className="text-white z-10 flex flex-row justify-around  w-72  bottom-10 left-8 space-x-4  absolute">
-             <span className="links"><FaFacebook /></span>
-             <span className="links"><FaInstagram /></span>
-             <span className="links"><FaFigma /></span>
-             <span className="links"><FaDribbble /></span>
-             <span className="links"><FaWhatsapp /></span>
-         </div>
-    </main>
-    </Layout>
-  )
-}
-
-export default index
+ export default About

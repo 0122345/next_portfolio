@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+.name{
+    position: relative;
+    font-family: 'Comic Neue',sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+     text-shadow: 2px 2px 4px #3f3f3f;
+
+     display: none;
+    }
+@keyframes animate {
+from {color: #0e3742;}
+ to {color: lightblue;}
+}
+
+@media screen and (max-width: 2200px) and (min-width: 820px) {
+    .name{
+        display: block;
+    }
+    
+}
+/* 
+flex uppercase text-5xl font-extrabold text-blue-700 */
+.logo{
+    display: flex;
+    text-transform: capitalize;
+    font-size: 44px;
+    font-weight: bolder;
+
+    background: conic-gradient(from 180deg at 50% 50%, #67CBB3 21.570231020450592deg, #FFF 90.48761487007141deg, #54EFCA 288.00721406936646deg, #FFF 306.9533944129944deg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  
+}
+ 
+    
