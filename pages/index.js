@@ -6,9 +6,9 @@ import Layout from '@/components/layout';
         <main className="bg-home w-screen h-screen">
           <div className="justify-center items-center text-center lg:w-full md:w-full w-[314px]">
             <p className="flex justify-center items-center">
-              <span className="lg:text-9xl md:text-7xl xl:text-9xl text-5xl text-gray-800 to-transparent font-extrabold z-0 relative">resume</span>
-              <span className="uppercase font-bold lg:text-5xl md:text-5xl text-3xl text-white z-10 relative right-[30%] top-[20%]">about</span>
-              <span className="uppercase font-bold lg:text-5xl md:text-5xl text-3xl text-often z-10 relative right-[29%] top-[20%]">me</span>
+              <span className="lg:text-9xl md:text-7xl xl:text-9xl text-5xl text-gray-800 to-transparent font-extrabold z-0 relative ">resume</span>
+              <span className="uppercase font-bold lg:text-5xl md:text-5xl text-3xl text-white z-10 relative md:right-[29%] md:top-[18px] lg:right-[29%] lg:top-[18px] xl:right-[29%] xl:top-[18px] top-[3pc]  right-20">about</span>
+              <span className="uppercase font-bold lg:text-5xl md:text-5xl text-3xl text-often z-10 relative  md:right-[28%] md:top-[18px] lg:right-[28%] lg:top-[18px] xl:right-[28%] xl:top-[18px] top-[3pc] right-16">me</span>
             </p>
           </div>
            
