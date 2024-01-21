@@ -1,51 +1,95 @@
-import Layout from '@/components/layout';
- 
- const About = () => {
-   return (
-     <Layout>
-        <main className="bg-home w-screen h-screen">
-          <div className="justify-center items-center text-center lg:w-full md:w-full w-[314px]">
-            <p className="flex justify-center items-center">
-              <span className="lg:text-9xl md:text-7xl xl:text-9xl text-5xl text-gray-800 to-transparent font-extrabold z-0 relative ">resume</span>
-              <span className="uppercase font-bold lg:text-5xl md:text-5xl text-3xl text-white z-10 relative md:right-[29%] md:top-[18px] lg:right-[29%] lg:top-[18px] xl:right-[29%] xl:top-[18px] top-[3pc]  right-20">about</span>
-              <span className="uppercase font-bold lg:text-5xl md:text-5xl text-3xl text-often z-10 relative  md:right-[28%] md:top-[18px] lg:right-[28%] lg:top-[18px] xl:right-[28%] xl:top-[18px] top-[3pc] right-16">me</span>
-            </p>
+import Layout from '@/components/layout'
+import { FaDribbble,FaFacebook, FaFigma, FaInstagram, FaWhatsapp  } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { BsTelephoneFill } from "react-icons/bs";
+import styles from "./contact.module.css"
+
+
+const Contact = () => {
+
+
+
+
+  
+  return (
+       <Layout>
+         <main className="bg-home text-white w-screen h-screen">
+          <div className="flex justify-center items-center text-3xl font-bold" id="heading">
+            <p>contact me</p>
+            <span className="uppercase">get in</span>
+            <span className="uppercase">touch</span>
           </div>
+        <div className="" id="left">
+          <span className="flex flex-col p-7 text-md w-56 h-56 space-y-5">
+            <h2 className='text-2xl'>
+              do not be shy!
+            </h2>
+            <p>
+            Feel free to get in touch with me. 
+            I am always open to discussing new 
+            projects, creative ideas or 
+            opportunities to be part of your 
+            visions.
+            </p>
+          </span>
            
-           <p className="text-white font-bold text-xl m-[23px] top-10 relative">Personal Information</p>
+           <span className="">
+             <span>
+             <MdEmail />
+             </span>
+             <span>
+               <p>mail me</p>
+               <p>ntwarifiacre043@gmail.com</p>
+             </span>
+           </span>
 
-           <div className="flex md:flex-row lg:flex-row space-y-4 flex-col pt-10 text-white space-x-5 ml-8">
-            <div className="w-[315px] flex flex-col h-52 text-lg space-y-6">
-               <span className="">First name: Fiacre</span>
-               <span className="">Last name: Ntwari Ashimwe</span>
-               <span className="">Age: 23 Years</span>
-               <span className="">Nationality: Rwandan</span>
-            </div>
+           <span className="">
+             <span>
+             <BsTelephoneFill />
+             </span>
+             <span>
+               <p>call me</p>
+               <p>+250 790 100 861</p>
+             </span>
+           </span>
 
-            <div className="w-[375px] flex flex-col left-0 text-lg space-y-6">
-               <span className="">Address: Kigali,Rwanda</span>
-               <span className="">Phone: +250 790 100 861</span>
-               <span className="">Email: ntwarifiacre043@gmail.com</span>
-               <span className="">Language: Kinyarwanda, English, Japanese</span>
-            </div>
+           <div className="text-white z-10 flex flex-row justify-around  w-72  bottom-10 left-8 space-x-4  absolute">
+             <span className="links"><FaFacebook /></span>
+             <span className="links"><FaInstagram /></span>
+             <span className="links"><FaFigma /></span>
+             <span className="links"><FaDribbble /></span>
+             <span className="links"><FaWhatsapp /></span>
+         </div>
+        </div>
 
-            <div className="">
-              <span className="">
+        <div className="" id="rightBottom">
+           <form action=""className='flex flex-col right-[25px] w- h- top-[33%] absolute' >
+              <div className="" >
+              {/* styles={styles.inputup} */}
+              <span className="flex flex-row space-x-6" id="together">
+                <input type="text" name="" id="" style={styles.input} />
+                <label htmlFor="Name" >Name</label>
+                <input type="email" name="" id=""  />
+                <label htmlFor="Email" >Email</label>
+                <input type="text" name="" id=""  />
+                <label htmlFor="Subject">Subject</label>
+                </span>
+               <span className="">
+                <textarea name="" id="" cols="30" rows="10" ></textarea>
+               </span>
+              </div>
+               <button type="submit" className='uppercase'>send message</button>
+           </form>
+        </div>
+         </main>
+       </Layout>
+  )
+}
 
-              </span>
-              <span className="">
+// style={styles.label}
+// style={styles.input}
+// style={styles.input}
+// style={styles.input}
+// style={styles.input}
 
-              </span>
-              <span className="">
-               
-              </span>
-            </div>
-
-           </div>
-
-        </main>
-     </Layout>
-   )
- }
- 
- export default About
+export default Contact

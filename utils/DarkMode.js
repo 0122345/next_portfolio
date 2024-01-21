@@ -10,6 +10,13 @@ const DarkMode = () => {
     
   };
 
+  const changeTheme = () => {
+    
+
+  };
+
+
+
   return (
     <div className={styles.dark}>
       <input
