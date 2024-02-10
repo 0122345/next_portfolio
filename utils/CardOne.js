@@ -1,4 +1,5 @@
 import React from 'react'
+import './CardOne.css'
 
 const cardone = () => {
   return (

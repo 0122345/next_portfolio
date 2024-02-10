@@ -1,4 +1,5 @@
 import Layout from '@/components/layout';
+
 import CircleSkills from '@/utils/CircleSkills';
  
  const About = () => {
